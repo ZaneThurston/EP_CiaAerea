@@ -137,8 +137,8 @@ public class InitialPanel extends JPanel{
 			@Override
 			public void actionPerformed(ActionEvent e) {
 				// TODO Auto-generated method stub
-				//panelConsFunc panelConFunc = new panelConsFunc(window, thisPanel);
-				//window.atualiza(thisPanel, panelConFunc);
+				panelConsFunc panelConFunc = new panelConsFunc(window, thisPanel);
+				window.atualiza(thisPanel, panelConFunc);
 			}
 		});
         
