@@ -9,9 +9,9 @@ public class Pessoa {
 		   		   bairro,
 		   		   compl,
 		   		   passaport,
-		   		   niver;
-	private char sexo,
-	     		 spcl_necess;
+		   		   niver,
+				   spcl_necess;
+	private char sexo;
 
 	public String getNome() {
 		return nome;
@@ -93,11 +93,11 @@ public class Pessoa {
 		this.sexo = sexo;
 	}
 
-	public char getSpcl_necess() {
+	public String getSpcl_necess() {
 		return spcl_necess;
 	}
 
-	public void setSpcl_necess(char spcl_necess) {
+	public void setSpcl_necess(String spcl_necess) {
 		this.spcl_necess = spcl_necess;
 	}
 	

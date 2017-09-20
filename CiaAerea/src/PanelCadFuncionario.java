@@ -118,7 +118,7 @@ public class PanelCadFuncionario extends JPanel {
 	public PanelCadFuncionario(final UserInterface window, final InitialPanel init) {
         lblNome = new JLabel("Nome completo: ");
         lblCPF = new JLabel("CPF: ");
-        lblEndereco = new JLabel("Endereï¿½o ");
+        lblEndereco = new JLabel("Endere\u00E7o ");
         lblNiver = new JLabel("Data de nascimento: ");
         lblSexo = new JLabel("Sexo(M ou F): ");
         lblEmail = new JLabel("E-mail: ");
@@ -152,8 +152,8 @@ public class PanelCadFuncionario extends JPanel {
         jButtonSave = new javax.swing.JButton();
         jButtonClean = new javax.swing.JButton();
 
-        lblEndereco.setFont(new java.awt.Font("Dialog", 0, 12)); // NOI18N
-        lblPersoData.setFont(new java.awt.Font("Dialog", 0, 12)); // NOI18N
+        lblEndereco.setFont(new Font("Dialog", Font.BOLD, 12)); // NOI18N
+        lblPersoData.setFont(new Font("Dialog", Font.BOLD, 12)); // NOI18N
         Niver.setFormatterFactory(new DefaultFormatterFactory(new DateFormatter()));
         SpclNecess.setModel(new DefaultComboBoxModel(new String[] {"Não", "Sim"}));
         Sexo.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "F", "M" }));
@@ -190,12 +190,12 @@ public class PanelCadFuncionario extends JPanel {
         JSeparator separator_1 = new JSeparator();
         
         JLabel lblEmpresa = new JLabel("Corporativo");
-        lblEmpresa.setFont(new Font("Tahoma", Font.PLAIN, 12));
+        lblEmpresa.setFont(new Font("Tahoma", Font.BOLD, 12));
         
         lblCargo = new JLabel("Cargo:");
         Cargo = new JComboBox();
         
-        Cargo.setModel(new DefaultComboBoxModel(new String[] {"Interno", "Piloto", "Comissario", "Mecanico"}));
+        Cargo.setModel(new DefaultComboBoxModel(new String[] {"Administracao", "Piloto", "Comissario", "Mecanico"}));
   
         
         JLabel lblNmFuncionrio = new JLabel("Num Funcionario:");
@@ -204,6 +204,7 @@ public class PanelCadFuncionario extends JPanel {
         CodFunc.setFormatterFactory(new DefaultFormatterFactory(new javax.swing.text.NumberFormatter(new java.text.DecimalFormat("#0"))));
         
         lblPiloto = new JLabel("Piloto");
+        lblPiloto.setFont(new Font("Tahoma", Font.BOLD, 11));
         
         lblNmAnac = new JLabel("Num ANAC:");
         
@@ -219,8 +220,10 @@ public class PanelCadFuncionario extends JPanel {
         HorasVoo = new JFormattedTextField();
         
         lblComissrio = new JLabel("Comissario");
+        lblComissrio.setFont(new Font("Tahoma", Font.BOLD, 11));
         
         lblTcnicoDeManuteno = new JLabel("Tecnico de manutencao");
+        lblTcnicoDeManuteno.setFont(new Font("Tahoma", Font.BOLD, 11));
         
         lblChtCom = new JLabel("CHT:");
         
@@ -481,7 +484,12 @@ public class PanelCadFuncionario extends JPanel {
         );
         this.setLayout(layout);
         
+        setFuncType();
         
+    }
+    
+    static void setFuncType(){
+    	
     }
     
     static void SalvarDados(String cargo) {

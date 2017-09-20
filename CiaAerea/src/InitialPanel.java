@@ -74,8 +74,8 @@ public class InitialPanel extends JPanel{
         CadVoos.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                PanelCadVoos panelVoos = new PanelCadVoos(window, thisPanel);
-                window.atualiza(thisPanel, panelVoos);
+                //PanelCadVoos panelVoos = new PanelCadVoos(window, thisPanel);
+                //window.atualiza(thisPanel, panelVoos);
             }
         });
         
@@ -90,16 +90,16 @@ public class InitialPanel extends JPanel{
         CadAirports.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                PanelCadAeroportos panelAirports = new PanelCadAeroportos(window, thisPanel);
-                window.atualiza(thisPanel, panelAirports);
+                //PanelCadAeroportos panelAirports = new PanelCadAeroportos(window, thisPanel);
+                //window.atualiza(thisPanel, panelAirports);
             }
         });
         
         CadRepairs.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                PanelCadReparo panelRepairs = new PanelCadReparo(window, thisPanel);
-                window.atualiza(thisPanel, panelRepairs);
+                //PanelCadReparo panelRepairs = new PanelCadReparo(window, thisPanel);
+                //window.atualiza(thisPanel, panelRepairs);
             }
         });
         
@@ -116,8 +116,8 @@ public class InitialPanel extends JPanel{
 			@Override
 			public void actionPerformed(ActionEvent e) {
 				// TODO Auto-generated method stub
-				panelConsVoos panelVoos = new panelConsVoos(window, thisPanel);
-				window.atualiza(thisPanel, panelVoos);
+				//panelConsVoos panelVoos = new panelConsVoos(window, thisPanel);
+				//window.atualiza(thisPanel, panelVoos);
 			}
 		});
         
@@ -127,8 +127,8 @@ public class InitialPanel extends JPanel{
 			@Override
 			public void actionPerformed(ActionEvent e) {
 				// TODO Auto-generated method stub
-				panelConsAnv panelFrota = new panelConsAnv(window, thisPanel);
-				window.atualiza(thisPanel, panelFrota);
+				//panelConsAnv panelFrota = new panelConsAnv(window, thisPanel);
+				//window.atualiza(thisPanel, panelFrota);
 			}
 		});
         
@@ -137,8 +137,8 @@ public class InitialPanel extends JPanel{
 			@Override
 			public void actionPerformed(ActionEvent e) {
 				// TODO Auto-generated method stub
-				panelConsFunc panelConFunc = new panelConsFunc(window, thisPanel);
-				window.atualiza(thisPanel, panelConFunc);
+				//panelConsFunc panelConFunc = new panelConsFunc(window, thisPanel);
+				//window.atualiza(thisPanel, panelConFunc);
 			}
 		});
         
@@ -147,8 +147,8 @@ public class InitialPanel extends JPanel{
 			@Override
 			public void actionPerformed(ActionEvent e) {
 				// TODO Auto-generated method stub
-				panelConsReparo panelConReps = new panelConsReparo(window, thisPanel);
-				window.atualiza(thisPanel, panelConReps);
+				//panelConsReparo panelConReps = new panelConsReparo(window, thisPanel);
+				//window.atualiza(thisPanel, panelConReps);
 			}
 		});
         
@@ -157,8 +157,8 @@ public class InitialPanel extends JPanel{
 			@Override
 			public void actionPerformed(ActionEvent e) {
 				// TODO Auto-generated method stub
-				PanelConsVoosComiss panel = new PanelConsVoosComiss(window, thisPanel);
-				window.atualiza(thisPanel, panel);
+				//PanelConsVoosComiss panel = new PanelConsVoosComiss(window, thisPanel);
+				//window.atualiza(thisPanel, panel);
 			}
 		});
         
@@ -170,8 +170,8 @@ public class InitialPanel extends JPanel{
 			@Override
 			public void actionPerformed(ActionEvent e) {
 				// TODO Auto-generated method stub
-				viewManu view = new viewManu(window, thisPanel);
-				window.atualiza(thisPanel, view);
+				//viewManu view = new viewManu(window, thisPanel);
+				//window.atualiza(thisPanel, view);
 			}
 		});
         JButton btnVoos = new JButton("Voos");
@@ -179,8 +179,8 @@ public class InitialPanel extends JPanel{
 			@Override
 			public void actionPerformed(ActionEvent e) {
 				// TODO Auto-generated method stub
-				viewVoo view = new viewVoo(window, thisPanel);
-				window.atualiza(thisPanel, view);
+				//viewVoo view = new viewVoo(window, thisPanel);
+				//window.atualiza(thisPanel, view);
 			}
 		});
         GroupLayout groupLayout = new GroupLayout(this);
