@@ -16,6 +16,7 @@ import java.awt.event.WindowEvent;
  *
  * @author Marcos
  */
+@SuppressWarnings("serial")
 public class UserInterface extends JFrame {
     JFrame mainWindow = this;
     int width, height;
